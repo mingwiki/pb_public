@@ -1,0 +1,31 @@
+{
+  "name": "pb_public",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "daisyui": "^5.0.43",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "wouter": "^3.7.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.21",
+    "globals": "^16.0.0",
+    "pocketbase": "^0.26.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12",
+    "tailwindcss": "^4.1.10",
+    "vite": "^6.3.5"
+  }
+}
