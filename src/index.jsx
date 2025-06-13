@@ -1,17 +1,22 @@
-import { render } from "preact";
-import { LocationProvider, Router } from "preact-iso";
-import { Home } from "./pages/public";
+import { render } from "preact"
+import { ErrorBoundary, lazy, LocationProvider, Router } from "preact-iso"
+import { Layout } from "./layout"
+const Home = lazy(() => import("./pages/home"))
+const NotFound = lazy(() => import("./pages/error"))
+
 export function App() {
   return (
     <LocationProvider>
-      <main>
-        <Router>
-          <Home path="/" />
-          <Home default />
-        </Router>
-      </main>
+      <ErrorBoundary onError={(e) => console.log(e)}>
+        <Layout>
+          <Router>
+            <Home path="/" />
+            <NotFound default />
+          </Router>
+        </Layout>
+      </ErrorBoundary>
     </LocationProvider>
-  );
+  )
 }
 
-render(<App />, document.getElementById("app"));
+render(<App />, document.getElementById("app"))

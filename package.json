@@ -8,6 +8,7 @@
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.1.10",
+		"daisyui": "^5.0.43",
 		"preact": "^10.25.3",
 		"preact-iso": "^2.9.2",
 		"tailwindcss": "^4.1.10"
