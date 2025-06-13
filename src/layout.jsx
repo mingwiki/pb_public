@@ -28,7 +28,9 @@ function Header({ title }) {
         </button>
       </div>
       <div className="flex-1">
-        <a className="btn btn-ghost font-serif text-xl">{title}</a>
+        <a href="/" className="btn btn-ghost font-serif text-xl">
+          {title}
+        </a>
       </div>
     </div>
   )
