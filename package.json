@@ -7,13 +7,18 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@tailwindcss/vite": "^4.1.10",
 		"preact": "^10.25.3",
-		"preact-iso": "^2.9.2"
+		"preact-iso": "^2.9.2",
+		"tailwindcss": "^4.1.10"
 	},
 	"devDependencies": {
 		"@preact/preset-vite": "^2.9.3",
 		"eslint": "^9.28.0",
 		"eslint-config-preact": "^1.5.0",
+		"globals": "^16.2.0",
+		"prettier": "^3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.12",
 		"vite": "^6.0.4"
 	},
 	"eslintConfig": {
