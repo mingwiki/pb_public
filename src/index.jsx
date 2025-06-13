@@ -3,7 +3,7 @@ import { ErrorBoundary, lazy, LocationProvider, Router } from "preact-iso"
 import { Layout } from "./layout"
 const Home = lazy(() => import("./pages/home"))
 const NotFound = lazy(() => import("./pages/error"))
-
+const Login = lazy(() => import("./pages/login"))
 export function App() {
   return (
     <LocationProvider>
@@ -11,6 +11,8 @@ export function App() {
         <Layout>
           <Router>
             <Home path="/" />
+            <Login path="/login" />
+            {/* Fallback route for 404 Not Found */}
             <NotFound default />
           </Router>
         </Layout>

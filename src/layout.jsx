@@ -2,7 +2,7 @@ export function Layout({ children }) {
   return (
     <main className="bg-base-100 flex h-screen flex-col">
       <Header title="Zed.Ink" />
-      <div className="flex-1 px-4 md:px-8"> {children}</div>
+      <div className="flex flex-1 px-4 md:px-8">{children}</div>
       <Footer />
     </main>
   )
@@ -31,6 +31,13 @@ function Header({ title }) {
         <a href="/" className="btn btn-ghost font-serif text-xl">
           {title}
         </a>
+      </div>
+      <div className="avatar avatar-online avatar-placeholder">
+        <div className="bg-neutral text-neutral-content w-8 rounded-full">
+          <a href="/login" className="text-xl">
+            AI
+          </a>
+        </div>
       </div>
     </div>
   )
